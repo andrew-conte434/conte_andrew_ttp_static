@@ -2,8 +2,6 @@
 <h1> The current time is: </h1>
 <h1 id="Time"></h1>
 <script>
-    getTime(){
-        let timeDisplay = document.getElementByID("Time");
         let date = new Date();
 
         let hours = date.getHours() % 12;
@@ -12,8 +10,7 @@
 
         if(hours === 0){hours = 12;}
         let time = hours + ":" + minutes + ":" + seconds;
-        timeDisplay.innerHTML = time;
-    }
+        document.write(time);
   </script>
   
 
