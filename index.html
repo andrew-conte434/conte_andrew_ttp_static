@@ -2,7 +2,7 @@
 <h1> The current time is: </h1>
 <h1 id="Time"></h1>
 <script>
-    const interval = setInterval(getTime(){
+    getTime(){
         let date = new Date();
 
         let hours = date.getHours() % 12;
@@ -13,8 +13,8 @@
         let time = hours + ":" + minutes + ":" + seconds;
         document.write(time);
         //document.getElementByID("Time").innerHTML = time;
-    }, 1000);
-   
+    }
+   setInterval(getTime(), 1000)
   </script>
   
 
