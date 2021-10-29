@@ -1,14 +1,11 @@
+<h1> Hello, my name is Andrew Conte and my favorite hobby is playing Hearthstone! </h1>
 
-     <h1> Hello, my name is Andrew Conte and my favorite hobby is playing Hearthstone! </h1>
+<h1> The current time is: </h1><h1 id="Time"></h1>
+<script type = "text/javascript">
+   let hours = Date.getHours() % 12;
+   let minutes = Date.getMinutes();
+   let seconds = Date.getSeconds();
 
-    <h1> The current time is: </h1><h1 id="Time"></h1>
-    <script type = "text/javascript">
-        function getTime(){
-             let hours = Date.getHours() % 12;
-             let minutes = Date.getMinutes();
-             let seconds = Date.getSeconds();
-
-             if(hours === 0){ hours = 12;}
-             document.getElementByID("Time").innerHTML = Date();
-        }
-      </script>
+   if(hours === 0){ hours = 12;}
+   document.getElementByID("Time").innerHTML = Date();
+ </script>
