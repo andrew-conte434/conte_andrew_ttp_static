@@ -1,19 +1,21 @@
 <head>
-   <script>
-     function getTime(){
-          let hours = date.getHours() % 12;
-          let minutes = date.getMinutes();
-          let seconds = date.getSeconds();
-
-          if(hours === 0){ hours = 12;}
-          
-          document.getElementByID("Time").innerHTML = hours;
-     }
-   </script>
+   
 </head>
 <body onload = "getTime()">
      <h1> Hello, my name is Andrew Conte and my favorite hobby is playing Hearthstone! </h1>
 
-     <h1> The current time is: <span id ="Time"><span></h1> 
+     <h1> The current time is: 
+     <script>
+     function getTime(){
+          let hours = Date.getHours() % 12;
+          let minutes = Date.getMinutes();
+          let seconds = Date.getSeconds();
+
+          if(hours === 0){ hours = 12;}
+          document.write("Hello");
+         // document.getElementByID("Time").innerHTML = Date();
+     }
+   </script>
+   </h1>
 </body>
 
