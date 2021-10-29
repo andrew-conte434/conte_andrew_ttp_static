@@ -2,16 +2,19 @@
 <h1> The current time is: </h1>
 <h1 id="Time"></h1>
 <script>
-    let date = new Date();
+    const interval = setInterval(getTime(){
+        let date = new Date();
 
-    let hours = date.getHours() % 12;
-    let minutes = date.getMinutes();
-    let seconds = date.getSeconds();
+        let hours = date.getHours() % 12;
+        let minutes = date.getMinutes();
+        let seconds = date.getSeconds();
 
-    if(hours === 0){hours = 12;}
-    let time = hours + ":" + minutes + ":" + seconds;
-    document.write(time);
-    //document.getElementByID("Time").innerHTML = time;
+        if(hours === 0){hours = 12;}
+        let time = hours + ":" + minutes + ":" + seconds;
+        document.write(time);
+        //document.getElementByID("Time").innerHTML = time;
+    }
+   
   </script>
   
 
