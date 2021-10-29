@@ -1,8 +1,8 @@
 <head>
    <script>
      function getTime(){
-          let hours = date.getHours % 12;
-          let minutes = date.getMinutes;
+          let hours = date.getHours() % 12;
+          let minutes = date.getMinutes();
           let seconds = date.getSeconds();
 
           if(hours === 0){ hours = 12;}
