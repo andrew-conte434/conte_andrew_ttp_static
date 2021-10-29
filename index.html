@@ -1,15 +1,18 @@
-<h1> Hello, my name is Andrew Conte and my favorite hobby is playing Hearthstone! </h1>
-<h1> The current time is: </h1>
-<script>
-        let date = new Date();
+<html>
+    <body>
+        <h1> Hello, my name is Andrew Conte and my favorite hobby is playing Hearthstone! </h1>
+        <h1> The current time is: </h1>
+        <script>
+                let date = new Date();
 
-        let hours = date.getHours() % 12;
-        let minutes = date.getMinutes();
-        let seconds = date.getSeconds();
+                let hours = date.getHours() % 12;
+                let minutes = date.getMinutes();
+                let seconds = date.getSeconds();
 
-        if(hours === 0){hours = 12;}
-        let time = hours + ":" + minutes + ":" + seconds;
-        document.write(time);
-  </script>
-  
+                if(hours === 0){hours = 12;}
+                let time = hours + ":" + minutes + ":" + seconds;
+                document.write(time);
+          </script>
+        </body>
+</html>
 
