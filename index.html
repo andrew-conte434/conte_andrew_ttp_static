@@ -9,8 +9,8 @@
                 let date = new Date();
                 let time = date.toLocaleTimeString('en-US');
                 timeDisplay.innerHTML = time;
+                setTimeout(getTime, 1000);
             }
-            setInterval(getTime, 1000);
           </script>
     </body>
 </html>
