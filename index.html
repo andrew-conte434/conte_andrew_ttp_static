@@ -3,9 +3,12 @@
         <h1> Hello, my name is Andrew Conte and my favorite hobby is playing Hearthstone! </h1>
         <h1> The current time is: </h1>
         <script>
+            function getTime(){
                 let date = new Date();
                 let time = date.toLocaleTimeString('en-US');
                 document.write(time);
+            }
+            setInterval(getTime, 1000);
           </script>
         </body>
 </html>
