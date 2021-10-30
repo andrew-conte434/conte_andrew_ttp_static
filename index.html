@@ -5,10 +5,9 @@
         <div id="Time"></div>
         <script>
             window.onLoad = function getTime(){
-                let timeDisplay = document.getElementByID('Time');
                 let date = new Date();
                 let time = date.toLocaleTimeString('en-US');
-                timeDisplay.innerHTML = time;
+                document.getElementByID('Time').innerHTML = time;
                 setTimeout(getTime, 1000);
             }
           </script>
