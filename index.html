@@ -2,7 +2,7 @@
 
 <body onload="getTime()">
 
-<h1>Hello, my name is Andrew Conte and my favorite hobby is playing Hearthstone!</h1>
+<h1>Hello, my name is Andrew Conte and my favorite hobby is playing Outer Wilds!</h1>
 <h1>The current time is: </h1>
 
 <h1 id="txt"></h1>
@@ -11,6 +11,10 @@
 function getTime() {
   let date = new Date();
   let time = date.toLocaleTimeString('en-US');
+   
+  //Date.toLocaleTimeString leaves an "AM" or "PM" on the end of the time
+  //this substring call removes that
+  time = time.substring(0, 8);
   document.getElementById('txt').innerHTML =  time;
   setTimeout(getTime, 1000);
 }
